@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<head>
+  <title>Bootstrap "Hello World"</title>
+   <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap.min.css"/>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+   <script type="text/javascript" src="https://cdn.datatables.net/r/ju-1.11.4/jqc-1.11.3,dt-1.10.8/datatables.min.js"></script>
+   <script type="text/javascript" charset="utf-8">
+      $(document).ready(function() {
+       $('#example').dataTable();
+     } );
+    </script>
+</head>
+<body>
+<h1>Hello World Example</h1>
+<p>This is a very basic "Hello World" example made up in Bootstrap. See if you can change the size of the header text above.</p>
+<div class="container">
+
+    <table id="example" class="table table-striped table-bordered" style="width:100%">
+    <thead>
+    <tr>
+    <th> <p>City Name </p></th>
+    <th> <p>Population </p></th>
+    <th> <p>Country </p></th>
+    </tr>
+    </thead>
+       {% for city in cities %}
+       <tr>
+          <td> <p> {{city.name}} </p></td>
+          <td> <p> {{city.population}} </p> </td>
+          <td> <p> {{city.country}} <p></td>
+       </tr>
+       {%endfor%}
+    </table>
+    </div>
+</body>
+</html>

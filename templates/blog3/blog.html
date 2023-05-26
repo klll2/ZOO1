@@ -1,0 +1,31 @@
+{% extends "blog3/base.html" %}
+ 
+{% block content %}
+ <header class="bg-success bg-gradient text-white">
+            <div class="container px-4 text-center">
+                <h1 class="fw-bolder">Welcome to Django</h1>
+                <p class="lead">This is a blog written by {{ writer }}</p>
+                <p class="lead"> Welcome and Enjoy </p>
+
+            </div>
+    </header>
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>Study</h3>
+      <p>Study more and you will get a better life</p>
+      <p>There is no ending time for studying</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Research</h3>
+      <p>A research is a process of searching and searching</p>
+      <p>Do the part that you have more interest on</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>Teaching</h3>
+      <p>When you love to study, try to teach</p>
+      <p>You will get more when you teach</p>
+    </div>
+  </div>
+</div>
+{% endblock %}
